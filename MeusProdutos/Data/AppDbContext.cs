@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MeusProdutos.Data;
 
 namespace MeusProdutos.Data
 {
@@ -14,5 +15,7 @@ namespace MeusProdutos.Data
         }
 
         public DbSet<Produto> Produtos { get; set; }
+
+        public DbSet<MeusProdutos.Data.Usuario> Usuario { get; set; }
     }
 }
